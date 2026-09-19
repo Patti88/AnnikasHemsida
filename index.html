@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rent & Räknat - Annikas Städ & Redovisning. Din helhetslösning för professionell hem- och kontorsstädning samt auktoriserad redovisning och bokföring.">
+    <title>Rent & Räknat | Annikas Städ & Redovisning</title>
+    <!-- Favicon placeholder -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header / Navigering -->
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-sparkles"></i></span>
+                <div class="logo-text">
+                    <span class="brand-name">Rent & Räknat</span>
+                    <span class="brand-tagline">Annikas Städ & Redovisning</span>
+                </div>
+            </a>
+
+            <!-- Mobilmeny-knapp -->
+            <button class="mobile-nav-toggle" aria-label="Öppna meny" aria-expanded="false">
+                <i class="fa-solid fa-bars open-icon"></i>
+                <i class="fa-solid fa-xmark close-icon"></i>
+            </button>
+
+            <!-- Navigeringslänkar -->
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="nav-link active">Startsida</a></li>
+                    <li><a href="#services-cleaning" class="nav-link">Städtjänster</a></li>
+                    <li><a href="#services-accounting" class="nav-link">Ekonomitjänster</a></li>
+                    <li><a href="#about-us" class="nav-link">Om oss</a></li>
+                    <li><a href="#contact" class="nav-link btn-nav">Kontakta oss</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Sektion -->
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">En enklare vardag</span>
+                    <h1>Ett skinande rent hem. En välskött ekonomi.</h1>
+                    <p class="hero-tagline">Vi tar hand om städningen och siffrorna, så att du kan fokusera på det som
+                        är viktigt för dig. Professionell städfirma och redovisningsbyrå under samma tak.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Boka kostnadsfri konsultation</a>
+                        <a href="#services-cleaning" class="btn btn-secondary">Utforska våra tjänster</a>
+                    </div>
+                </div>
+                <div class="hero-cards-preview">
+
+                    <!-- ÄNDRAT: Från div till a, och lagt till href="#services-cleaning" -->
+                    <a href="#services-cleaning" class="preview-card cleaning-card-hover">
+                        <div class="card-icon"><i class="fa-solid fa-broom"></i></div>
+                        <h3>Professionell Städning</h3>
+                        <p>Skinande rent med miljöfokus för hem och företag.</p>
+                        <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                    <!-- ÄNDRAT: Från div till a, och lagt till href="#services-accounting" -->
+                    <a href="#services-accounting" class="preview-card accounting-card-hover">
+                        <div class="card-icon"><i class="fa-solid fa-calculator"></i></div>
+                        <h3>Trygg Redovisning</h3>
+                        <p>Noggrann bokföring och ekonomisk rådgivning.</p>
+                        <span class="card-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduktionssektion -->
+        <section class="intro-section section-padding">
+            <div class="container text-center-desktop">
+                <div class="section-title-wrapper">
+                    <span class="subtitle">Vilka är vi?</span>
+                    <h2>Kombinerad expertis för livspusslet och företagsdrömmen</h2>
+                    <div class="title-divider"></div>
+                </div>
+                <p class="lead-text">
+                    Välkommen till <strong>Rent & Räknat</strong>! Vi är ett unikt företag som grundades för att erbjuda
+                    det bästa av två världar. Genom att kombinera en noggrann städfirma med en erfaren redovisningsbyrå
+                    hjälper vi både privatpersoner och företagare att spara tid, minska stressen och få struktur på
+                    vardagen och ekonomin.
+                </p>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Trygghet & Ansvarsförsäkring</h3>
+                        <p>Full ansvarsförsäkring, sekretess och F-skatt. Du är alltid i trygga händer.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fa-solid fa-circle-check"></i></div>
+                        <h3>Högsta Kvalitet</h3>
+                        <p>Vi arbetar noggrant, strukturerat och med öga för detaljer i allt vi gör.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon"><i class="fa-solid fa-hands-holding"></i></div>
+                        <h3>Skräddarsydda Lösningar</h3>
+                        <p>Varje hem och varje företag har unika behov. Vi anpassar oss efter dig.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Städtjänster -->
+        <section id="services-cleaning" class="cleaning-section section-padding alt-bg">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle">Våra städtjänster</span>
+                    <h2>Ett rent hem och en fräsch arbetsplats</h2>
+                    <p class="section-desc">Vi erbjuder professionella städtjänster med kvalitetsgaranti och
+                        miljövänliga rengöringsprodukter. Du kan använda RUT-avdraget för alla våra tjänster i hemmet.
+                    </p>
+                    <div class="title-divider"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Hemstädning -->
+                    <div class="service-card">
+                        <div class="service-img-placeholder">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Hemstädning</h3>
+                            <p>Låt oss ta hand om det vardagliga städet så att du får tid över till annat. Vi erbjuder
+                                regelbunden hemstädning varje, varannan eller var fjärde vecka.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Dammtorkning av alla ytor</li>
+                                <li><i class="fa-solid fa-check"></i> Dammsugning & moppning</li>
+                                <li><i class="fa-solid fa-check"></i> Grundlig rengöring av kök & bad</li>
+                                <li><i class="fa-solid fa-check"></i> Flexibla abonnemang utan bindningstid</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-card" data-service="Hemstädning">Boka hemstädning</a>
+                        </div>
+                    </div>
+
+                    <!-- Flyttstädning -->
+                    <div class="service-card">
+                        <div class="service-img-placeholder">
+                            <i class="fa-solid fa-truck-ramp-box"></i>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Flyttstädning</h3>
+                            <p>Att flytta är spännande men också tidskrävande. Vi utför en komplett och godkänd
+                                flyttstädning enligt Mäklarsamfundets strikta riktlinjer.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Komplett fönsterputs ingår alltid</li>
+                                <li><i class="fa-solid fa-check"></i> Rengöring bakom spis, kyl & frys</li>
+                                <li><i class="fa-solid fa-check"></i> Städgaranti för köparens godkännande</li>
+                                <li><i class="fa-solid fa-check"></i> RUT-avdrag direkt på fakturan</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-card" data-service="Flyttstädning">Boka flyttstädning</a>
+                        </div>
+                    </div>
+
+                    <!-- Kontorsstädning -->
+                    <div class="service-card">
+                        <div class="service-img-placeholder">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Kontorsstädning</h3>
+                            <p>En ren och välstädad arbetsmiljö ökar trivseln och produktiviteten hos dina medarbetare,
+                                och ger ett professionellt intryck till dina kunder.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Anpassat efter ert företags arbetstider</li>
+                                <li><i class="fa-solid fa-check"></i> Tömning av papperskorgar & avfall</li>
+                                <li><i class="fa-solid fa-check"></i> Desinficering av tangentbord & ytor</li>
+                                <li><i class="fa-solid fa-check"></i> Kök, fikarum och toaletter i toppskick</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-card" data-service="Kontorsstädning">Få offert för
+                                kontor</a>
+                        </div>
+                    </div>
+
+                    <!-- Fönsterputs -->
+                    <div class="service-card">
+                        <div class="service-img-placeholder">
+                            <!-- Din nya SVG-ikon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="80" height="80">
+                                <!-- Fönsterruta (Yttre ram) -->
+                                <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2 3C1.44772 3 1 3.44772 1 4V20C1 20.5523 1.44772 21 2 21H22C22.5523 21 23 20.5523 23 20V4C23 3.44772 22.5523 3 22 3H2ZM3 5H21V19H3V5Z"
+                                    opacity="0.3" />
+                                <!-- Fönsterkors / Spröjs -->
+                                <path fill="currentColor" d="M11.25 5H12.75V19H11.25V5Z" opacity="0.2" />
+                                <path fill="currentColor" d="M3 11.25H21V12.75H3V11.25Z" opacity="0.2" />
+                                <!-- Mindre Fönsterskrapa (Squeegee) vinklad i fönstret -->
+                                <g fill="currentColor" transform="translate(2, -1)">
+                                    <rect x="11" y="6" width="7" height="1.2" rx="0.6" />
+                                    <rect x="12.5" y="7.2" width="4" height="1" rx="0.3" />
+                                    <path d="M14 8.2H15V13.5C15 13.8 14.8 14 14.5 14C14.2 14 14 13.8 14 13.5V8.2Z" />
+                                </g>
+                                <!-- Skummad / Rengjord dragyta nedanför skrapan -->
+                                <path fill="currentColor" d="M13 5H20V12H13V5Z" opacity="0.15" />
+                                <!-- Blänk / Glansstjärnor -->
+                                <path fill="currentColor"
+                                    d="M5.5 6.5C5.5 7.6 4.6 8.5 3.5 8.5C4.6 8.5 5.5 9.4 5.5 10.5C5.5 9.4 6.4 8.5 7.5 8.5C6.4 8.5 5.5 7.6 5.5 6.5Z" />
+                                <path fill="currentColor"
+                                    d="M18.5 14.5C18.5 15.3 17.8 16 17 16C17.8 16 18.5 16.7 18.5 17.5C18.5 16.7 19.2 16 20 16C19.2 16 18.5 15.3 18.5 14.5Z" />
+                            </svg>
+                        </div>
+                        <div class="service-card-content">
+                            <h3>Fönsterputs</h3>
+                            <p>Släpp in ljuset med kristallklara fönster! Vi putsar fönster på villor, lägenheter och
+                                kontor, snabbt och utan ränder.</p>
+                            <ul class="service-features">
+                                <li><i class="fa-solid fa-check"></i> Invändig och utvändig putsning</li>
+                                <li><i class="fa-solid fa-check"></i> Putsning mellan glas (3-glasfönster)</li>
+                                <li><i class="fa-solid fa-check"></i> Avtorkning av fönsterkarmar</li>
+                                <li><i class="fa-solid fa-check"></i> Egen utrustning och stegar medtages</li>
+                            </ul>
+                            <a href="#contact" class="btn btn-card" data-service="Fönsterputs">Boka fönsterputs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ekonomitjänster -->
+        <section id="services-accounting" class="accounting-section section-padding">
+            <div class="container">
+                <div class="section-title-wrapper">
+                    <span class="subtitle">Våra ekonomitjänster</span>
+                    <h2>Ekonomisk trygghet för ditt företag</h2>
+                    <p class="section-desc">Vi hjälper små och medelstora företag med allt från den löpande bokföringen
+                        till årsbokslut och deklarationer. Personligt engagemang och ordning och reda.</p>
+                    <div class="title-divider"></div>
+                </div>
+
+                <div class="accounting-services-grid">
+                    <!-- Löpande bokföring -->
+                    <a href="#contact" class="acc-service-item" data-service="Löpande bokföring">
+                        <div class="acc-icon-box"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <div class="acc-text-box">
+                            <h3>Löpande bokföring</h3>
+                            <p>Vi sköter din dagliga bokföring digitalt och smidigt. Vi registrerar dina verifikat,
+                                kvitton och fakturor så att du alltid har uppdaterade siffror.</p>
+                        </div>
+                    </a>
+
+                    <!-- Lönehantering -->
+                    <a href="#contact" class="acc-service-item" data-service="Lönehantering">
+                        <div class="acc-icon-box"><i class="fa-solid fa-users"></i></div>
+                        <div class="acc-text-box">
+                            <h3>Lönehantering</h3>
+                            <p>Att räkna ut löner, semesterersättning, traktamenten och hantera arbetsgivardeklarationer
+                                tar tid. Vi ser till att dina anställda får rätt lön i rätt tid.</p>
+                        </div>
+                    </a>
+
+                    <!-- Fakturering & Kundreskontra -->
+                    <a href="#contact" class="acc-service-item" data-service="Fakturering & Kundreskontra">
+                        <div class="acc-icon-box"><i class="fa-solid fa-paper-plane"></i></div>
+                        <div class="acc-text-box">
+                            <h3>Fakturering & Kundreskontra</h3>
+                            <p>Vi hjälper dig att skapa och skicka fakturor till dina kunder, följa upp betalningar samt
+                                skicka betalningspåminnelser om det behövs.</p>
+                        </div>
+                    </a>
+
+                    <!-- Skatteredovisning & Moms -->
+                    <a href="#contact" class="acc-service-item" data-service="Skatteredovisning & Moms">
+                        <div class="acc-icon-box"><i class="fa-solid fa-percent"></i></div>
+                        <div class="acc-text-box">
+                            <h3>Skatteredovisning & Moms</h3>
+                            <p>Momsdeklarationer och arbetsgivardeklarationer ska lämnas in i tid till Skatteverket. Vi
+                                räknar ut, kontrollerar och redovisar allt korrekt.</p>
+                        </div>
+                    </a>
+
+                    <!-- Årsbokslut & Årsredovisning -->
+                    <a href="#contact" class="acc-service-item" data-service="Årsbokslut & Årsredovisning">
+                        <div class="acc-icon-box"><i class="fa-solid fa-chart-pie"></i></div>
+                        <div class="acc-text-box">
+                            <h3>Årsbokslut & Årsredovisning</h3>
+                            <p>När räkenskapsåret är slut sammanställer vi bokslut, årsredovisning och
+                                inkomstdeklaration för bolaget samt delägarnas privata K4/K10-blanketter.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="cta-inner-box">
+                    <div class="cta-text">
+                        <h3>Vill du digitalisera din ekonomi?</h3>
+                        <p>Vi arbetar med moderna, molnbaserade ekonomisystem som gör att du kan fota kvitton direkt i
+                            mobilen och ha full koll i realtid.</p>
+                    </div>
+                    <a href="#contact" class="btn btn-white" data-service="Ekonomitjänster">Diskutera ekonomilösning</a>
+                </div>
+            </div>
+        </section>
+        <!-- Om oss Sektion -->
+        <section id="about-us" class="about-section section-padding alt-bg">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image-column">
+                        <div class="about-image-wrapper">
+                            <!-- SVG avatar representing Annika, professional and friendly, to avoid broken external links -->
+                            <svg viewBox="0 0 400 400" class="about-illustration" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#3a7bd5;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#3a6073;stop-opacity:1" />
+                                    </linearGradient>
+                                    <clipPath id="circleClip">
+                                        <circle cx="200" cy="200" r="180" />
+                                    </clipPath>
+                                </defs>
+                                <circle cx="200" cy="200" r="190" fill="none" stroke="#3a7bd5" stroke-width="4"
+                                    stroke-dasharray="10 5" />
+                                <g clip-path="url(#circleClip)">
+                                    <rect width="400" height="400" fill="#f0f7ff" />
+                                    <circle cx="200" cy="220" r="130" fill="url(#avatarGrad)" />
+                                    <!-- Person outline representation -->
+                                    <circle cx="200" cy="150" r="55" fill="#fcdcd0" /> <!-- head -->
+                                    <path
+                                        d="M145,150 Q145,115 200,115 Q255,115 255,150 Q255,155 200,155 Q145,155 145,150 Z"
+                                        fill="#8b5a2b" /> <!-- hair back -->
+                                    <path d="M165,145 C155,115 235,100 245,135 C255,120 220,105 180,110 Z"
+                                        fill="#8b5a2b" /> <!-- hair details -->
+                                    <!-- glasses -->
+                                    <rect x="175" y="142" width="22" height="15" rx="5" fill="none" stroke="#222"
+                                        stroke-width="3" />
+                                    <rect x="203" y="142" width="22" height="15" rx="5" fill="none" stroke="#222"
+                                        stroke-width="3" />
+                                    <line x1="197" y1="149" x2="203" y2="149" stroke="#222" stroke-width="3" />
+                                    <!-- smile -->
+                                    <path d="M190,172 Q200,182 210,172" fill="none" stroke="#222" stroke-width="3"
+                                        stroke-linecap="round" />
+                                    <!-- shoulders & shirt -->
+                                    <path d="M110,280 C110,210 290,210 290,280 L290,400 L110,400 Z" fill="#1e3c72" />
+                                    <!-- collar / blouse -->
+                                    <path d="M170,225 L200,260 L230,225 Z" fill="#fcdcd0" />
+                                    <path d="M165,225 L200,250 L170,250 Z" fill="#ffffff" />
+                                    <path d="M235,225 L200,250 L230,250 Z" fill="#ffffff" />
+                                    <!-- Sparkle icons overlay inside SVG -->
+                                    <path d="M300,110 L305,120 L315,125 L305,130 L300,140 L295,130 L285,125 L295,120 Z"
+                                        fill="#f39c12" />
+                                    <path d="M90,180 L93,185 L98,187 L93,189 L90,194 L87,189 L82,187 L87,185 Z"
+                                        fill="#f39c12" />
+                                </g>
+                            </svg>
+                            <div class="experience-badge">
+                                <span class="exp-years">15+</span>
+                                <span class="exp-text">Års Erfarenhet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-text-column">
+                        <div class="section-title-wrapper">
+                            <span class="subtitle">Möt grundaren</span>
+                            <h2>Om oss & Annika</h2>
+                            <div class="title-divider-left"></div>
+                        </div>
+                        <p>
+                            Många undrar hur man kommer på idén att kombinera städning och redovisning. Svaret för mig,
+                            Annika, är ganska enkelt: <strong>det handlar om ordning och reda i livets alla
+                                områden.</strong>
+                        </p>
+                        <p>
+                            Jag startade Rent & Räknat efter att ha arbetat i många år som både ekonomiansvarig och inom
+                            servicebranschen. Jag märkte att mina kunder – oavsett om de var stressade småbarnsföräldrar
+                            eller hårt arbetande egenföretagare – led av exakt samma sak: brist på tid och struktur.
+                        </p>
+                        <p>
+                            Om det är kaos hemma eller kaos i bokföringen skapar det en inre stress. Genom att erbjuda
+                            högkvalitativ städning och trygg redovisningshjälp under ett och samma varumärke kan vi
+                            erbjuda en helhetslösning som frigör ovärderlig tid och ger dig lugnet tillbaka.
+                        </p>
+                        <p class="about-quote">
+                            "Vår vision är att vara den lilla, personliga byrån där du inte bara är ett nummer. Vi bryr
+                            oss om ditt hem och din verksamhet på riktigt."
+                            <span class="quote-author">- Annika, Grundare & Ägare</span>
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">250+</span>
+                                <span class="stat-label">Nöjda Kunder</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">98%</span>
+                                <span class="stat-label">Kundnöjdhet</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Svensk F-skatt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt Sektion -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-grid">
+                    <!-- Kontaktinfo -->
+                    <div class="contact-info-column">
+                        <div class="section-title-wrapper">
+                            <span class="subtitle">Kontakta oss</span>
+                            <h2>Hör av dig till oss idag!</h2>
+                            <p class="contact-intro-text">Fyll i formuläret så återkommer vi till dig inom 24 timmar på
+                                vardagar. Du kan också ringa eller maila oss direkt.</p>
+                            <div class="title-divider-left"></div>
+                        </div>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="detail-text">
+                                    <h4>Ring oss</h4>
+                                    <p><a href="tel:081234567">08-123 45 67</a></p>
+                                    <p class="sub-detail">Vardagar: 08:00 – 17:00</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-text">
+                                    <h4>E-post</h4>
+                                    <p><a href="mailto:info@rentoracknat.se">info@rentoracknat.se</a></p>
+                                    <p class="sub-detail">Vi svarar snabbt på alla frågor!</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="detail-text">
+                                    <h4>Besöksadress</h4>
+                                    <p>Sveavägen 45, 111 34 Stockholm</p>
+                                    <p class="sub-detail">Boka gärna tid innan besök</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rut-info-box">
+                            <i class="fa-solid fa-percent rut-badge-icon"></i>
+                            <div>
+                                <h4>Glöm inte RUT-avdraget!</h4>
+                                <p>Som privatperson betalar du endast 50% av arbetskostnaden för städtjänster. Vi sköter
+                                    all administration med Skatteverket direkt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kontaktformulär -->
+                    <div class="contact-form-column">
+                        <div class="form-wrapper">
+                            <h3>Skicka en förfrågan</h3>
+                            <p class="form-instruction">Berätta lite om vad du behöver hjälp med, så skräddarsyr vi ett
+                                förslag.</p>
+
+                            <form id="contactForm" novalidate>
+                                <!-- Namn -->
+                                <div class="form-group">
+                                    <label for="name">Ditt fullständiga namn <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-user input-icon"></i>
+                                        <input type="text" id="name" name="name" placeholder="Annika Andersson"
+                                            required>
+                                    </div>
+                                    <span class="error-message" id="nameError">Vänligen fyll i ditt namn</span>
+                                </div>
+
+                                <!-- E-post -->
+                                <div class="form-group">
+                                    <label for="email">E-postadress <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-envelope input-icon"></i>
+                                        <input type="email" id="email" name="email" placeholder="annika@exempel.se"
+                                            required>
+                                    </div>
+                                    <span class="error-message" id="emailError">Ange en giltig e-postadress</span>
+                                </div>
+
+                                <!-- Telefon -->
+                                <div class="form-group">
+                                    <label for="phone">Telefonnummer <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-phone input-icon"></i>
+                                        <input type="tel" id="phone" name="phone" placeholder="070-123 45 67" required>
+                                    </div>
+                                    <span class="error-message" id="phoneError">Vänligen ange ditt telefonnummer (minst
+                                        6 siffror)</span>
+                                </div>
+
+                                <!-- Intresserad av -->
+                                <div class="form-group">
+                                    <label for="interest">Vad behöver du hjälp med?</label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-list-check input-icon"></i>
+                                        <select id="interest" name="interest">
+                                            <option value="">Välj ett alternativ...</option>
+                                            <option value="Hemstädning">Städtjänster - Hemstädning</option>
+                                            <option value="Flyttstädning">Städtjänster - Flyttstädning</option>
+                                            <option value="Kontorsstädning">Städtjänster - Kontorsstädning</option>
+                                            <option value="Fönsterputs">Städtjänster - Fönsterputs</option>
+                                            <option value="Ekonomitjänster">Ekonomitjänster / Redovisning</option>
+                                            <option value="Båda">Både Städning & Ekonomi</option>
+                                            <option value="Övrigt">Övrigt</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <!-- Meddelande -->
+                                <div class="form-group">
+                                    <label for="message">Meddelande <span class="required">*</span></label>
+                                    <textarea id="message" name="message" rows="5"
+                                        placeholder="Beskriv dina önskemål, t.ex. storlek på huset i kvadratmeter eller hur ofta du vill ha hjälp med bokföringen..."
+                                        required></textarea>
+                                    <span class="error-message" id="messageError">Vänligen skriv ett meddelande (minst
+                                        10 tecken)</span>
+                                </div>
+
+                                <!-- Skicka-knapp -->
+                                <button type="submit" class="btn btn-primary btn-block btn-submit" id="submitBtn">
+                                    <span class="btn-text">Skicka förfrågan</span>
+                                    <span class="btn-spinner"><i class="fa-solid fa-spinner fa-spin"></i></span>
+                                </button>
+                            </form>
+
+                            <!-- Framgångsmeddelande -->
+                            <div class="success-message-box" id="successBox" role="alert" aria-hidden="true">
+                                <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                                <h3>Tack för din förfrågan!</h3>
+                                <p>Vi har tagit emot ditt meddelande och kommer att kontakta dig så snart som möjligt,
+                                    vanligtvis inom 24 timmar på vardagar.</p>
+                                <button class="btn btn-secondary btn-sm" id="resetFormBtn">Skicka ett nytt
+                                    meddelande</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-about-col">
+                <a href="#" class="logo logo-white">
+                    <span class="logo-icon"><i class="fa-solid fa-sparkles"></i></span>
+                    <span class="brand-name">Rent & Räknat</span>
+                </a>
+                <p>Annikas Städ & Redovisning erbjuder professionella städtjänster och auktoriserad redovisning under
+                    ett och samma tak. Vi skapar ordning och reda i din vardag och ekonomi.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links-col">
+                <h3>Snabblänkar</h3>
+                <ul>
+                    <li><a href="#">Startsida</a></li>
+                    <li><a href="#services-cleaning">Städtjänster</a></li>
+                    <li><a href="#services-accounting">Ekonomitjänster</a></li>
+                    <li><a href="#about-us">Om oss</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-services-col">
+                <h3>Våra Tjänster</h3>
+                <ul>
+                    <li><a href="#services-cleaning">Hemstädning</a></li>
+                    <li><a href="#services-cleaning">Flyttstädning</a></li>
+                    <li><a href="#services-cleaning">Kontorsstädning</a></li>
+                    <li><a href="#services-accounting">Löpande Bokföring</a></li>
+                    <li><a href="#services-accounting">Årsredovisning & Deklaration</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact-col">
+                <h3>Kontaktdetaljer</h3>
+                <ul class="footer-contact-info">
+                    <li><i class="fa-solid fa-phone"></i> <a href="tel:081234567">08-123 45 67</a></li>
+                    <li><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:info@rentoracknat.se">info@rentoracknat.se</a></li>
+                    <li><i class="fa-solid fa-location-dot"></i> Sveavägen 45, 111 34 Stockholm</li>
+                </ul>
+                <div class="org-number">Org.nr: 556123-4567</div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <p>&copy; 2026 Rent & Räknat. Alla rättigheter förbehållna. Skapad av Annika.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Integritetspolicy</a>
+                    <a href="#">Allmänna villkor</a>
+                    <a href="#">RUT-avdrag info</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" aria-label="Tillbaka till toppen">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript Source -->
+    <script src="script.js"></script>
+</body>
+
+</html>
